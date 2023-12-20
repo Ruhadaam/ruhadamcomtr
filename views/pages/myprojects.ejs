@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My Project</title>
+    <%- include("../template/head") %>
+</head>
+
+<body>
+    <!-- SIDEBAR START -->
+    <%- include("../template/sidebar.ejs") %>
+        <!-- SIDEBAR END -->
+
+        <!-- CONTAINER START -->
+
+        <div class="container article-clean pt-5">
+            <div class="text-center intro">
+                <h1 class="text-center">My Projects</h1>
+                <p class="text-center"><span class="by">by</span> <a href="#">Ruh Adam</a><span class="date">Nov
+                        13th, 2023 </span></p>
+
+            </div>
+           <hr>
+            <div class="row mt-5">
+
+              
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/passmaker.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Maker</h5>
+
+                            <p class="card-text">
+                                I designed a site that creates strong and complex passwords for you.
+                            </p>
+                            
+                            <a href="https://github.com/Ruhadaam/password-maker" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/countries.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Countries Info</h5>
+
+                            <p class="card-text">
+                                I have developed a website where you can view some data of countries and their neighboring countries.
+                            </p>
+                            
+                            <a href="https://github.com/Ruhadaam/get-country-info" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/versus.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Superhero Comparison</h5>
+
+                            <p class="card-text">I developed a website where you can compare the abilities of Marvel and DC superheroes.
+                            </p>
+                            
+                            <a href="https://github.com/Ruhadaam/Super-Heroes-Versus" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CONTAINER END -->
+        <%- include("../template/script.ejs") %>
+            <style>
+                :root {
+                    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+                }
+
+                .card {
+                    
+                    border: 1px solid #ffffff;
+                    color: rgba(0, 0, 0, 0.8);
+                    margin-bottom: 2rem;
+                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                    transition: all 0.3s ease-in;
+                    border-radius: 15px;
+                }
+
+                .card img {
+                    -webkit-border-top-left-radius: 15px;
+                    -webkit-border-top-right-radius: 15px;
+                    -moz-border-radius-topleft: 15px;
+                    -moz-border-radius-topright: 15px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+
+                .card:hover {
+                    transform: translateY(-10px);
+                }
+
+
+                @media (max-width: 991px) {
+                    .card {
+                        left: 70px;
+                    }
+                }
+
+                .btn {
+                    border: 3px solid;
+                    border-image-slice: 1;
+                    background: var(--gradient) !important;
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent !important;
+                    border-image-source: var(--gradient) !important;
+                    text-decoration: none;
+                    transition: all .4s ease;
+                }
+
+                .btn:hover,
+                .btn:focus {
+                    background: var(--gradient) !important;
+                    -webkit-background-clip: none !important;
+                    -webkit-text-fill-color: #fff !important;
+                    border: 3px solid #fff !important;
+                    box-shadow: #222 1px 0 10px;
+                    text-decoration: underline;
+                }
+            </style>
+
+</body>
+
+</html>
