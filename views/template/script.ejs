@@ -6,3 +6,23 @@
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="/assets/js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var currentUrl = window.location.pathname;
+  
+      // Tüm nav-link elemanlarını seç
+      var navLinks = document.querySelectorAll('.nav-link');
+  
+      // Her bir nav-link elemanını kontrol et
+      navLinks.forEach(function (link) {
+        // Link'in href özelliğini al
+        var linkUrl = link.getAttribute('href');
+  
+        // Eğer linkUrl, currentUrl ile eşleşiyorsa, active class'ını ekle
+        if (currentUrl === linkUrl) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+  
