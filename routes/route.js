@@ -4,7 +4,11 @@ const router = express.Router();
 const path = require('path');
 
 router.use('/dreams', (req, res) => {
-    res.render("pages/dreams");
+    const data = {
+        value: "template/home",
+        title: "Ana Sayfa"
+      };
+    res.render("pages/index",data);
 });
 router.use('/projects', (req, res) => {
     res.render("pages/myprojects");
@@ -14,7 +18,11 @@ router.use('/about', (req, res) => {
 });
 
 router.use('/', (req, res) => {
-    res.render("pages/index");
+    const data = {
+        value: "",
+        title: "Ana Sayfa"
+      };
+    res.render("pages/index",data);
 });
 
 

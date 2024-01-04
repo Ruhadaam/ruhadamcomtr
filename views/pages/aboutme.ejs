@@ -17,6 +17,21 @@
     <div class="container article-clean">
       <div class="row">
         <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+          <div class="text-center intro">
+            <h1 class="text-center">My Dreams</h1>
+            <p class="text-center"><span class="by">by</span> <a href="#">Ruh Adam</a><span class="date">
+              July 31<sup>th</sup> 2023
+              </span></p>
+          </div>
+          <hr class="custom-hr">
+          <div class="gif-container">
+            <img src="/assets/videos/giphy.gif" style="width: 100px;" alt="gif" class="animated-gif">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
           <%- include("../template/content.ejs") %>
         </div>
       </div>
@@ -29,7 +44,9 @@
 
     <%- include("../template/script.ejs") %>
 
-
+    <script>
+      AOS.init();
+  </script>
 </body>
 
 </html>

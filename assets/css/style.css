@@ -114,3 +114,33 @@
     transform: translate(0, -66.666%);
   }
 }
+
+.gif-container {
+  float: right;
+  position: relative;
+  bottom: 89px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
+  border-radius: 18px 18px 18px 18px;
+  -webkit-border-radius: 18px 18px 18px 18px;
+  -moz-border-radius: 18px 18px 18px 18px;
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    position: relative;
+    bottom: 5%;
+  
+  }
+  .gif-container {
+ left: 5px;
+  }
+
+
+}
