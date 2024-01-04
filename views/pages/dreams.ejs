@@ -17,24 +17,31 @@
 
     <!-- CONTAINER START -->
     <div class="container article-clean  py-2">
-      <div class="text-center intro">
-        <h1 class="text-center">My Dreams</h1>
-        <p class="text-center"><span class="by">by</span> <a href="#">Ruh Adam</a><span class="date">Jul 30th 2023 </span></p>
-
-    </div>
-
-         <hr>
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+          <div class="text-center intro">
+            <h1 class="text-center">My Dreams</h1>
+            <p class="text-center"><span class="by">by</span> <a href="#">Ruh Adam</a><span class="date">
+              July 31<sup>th</sup> 2023
+              </span></p>
+          </div>
+          <hr class="custom-hr">
+          <div class="gif-container">
+            <img src="/assets/videos/giphy.gif" style="width: 100px;" alt="gif" class="animated-gif">
+          </div>
+        </div>
+      </div>
       
          
-          <article class="postcard light blue">
+          <article class="postcard light blue" data-aos="fade-up"  data-aos-duration="1500">
             <a class="postcard__img_link" href="#">
               <img class="postcard__img" src="/assets/img/nyc2.jpg" alt="Image Title" />
             </a>
             <div class="postcard__text t-dark">
               <h1 class="postcard__title blue"><a href="#">New York</a></h1>
               <div class="postcard__subtitle small">
-                <time datetime="2023-08-10 18:00:00">
-                  <i class="fas fa-calendar-alt mr-2"></i>Tue, 30th 2023
+                <time datetime="2023-07-31 18:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>July 31 <sup>th</sup> 2023
                 </time>
               </div>
               <div class="postcard__bar"></div>
@@ -42,15 +49,15 @@
            
             </div>
           </article>
-          <article class="postcard light red">
+          <article class="postcard light red" data-aos="fade-up"  data-aos-duration="1500">
             <a class="postcard__img_link" href="#">
               <img class="postcard__img" src="/assets/img/amg.png" alt="Image Title" />	
             </a>
             <div class="postcard__text t-dark">
               <h1 class="postcard__title red"><a href="#">Mercedes Benz</a></h1>
               <div class="postcard__subtitle small">
-                <time datetime="2023-08-10 18:00:00">
-                  <i class="fas fa-calendar-alt mr-2"></i>Tue, 30th 2023
+                <time datetime="2023-07-31 18:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>July 31 <sup>th</sup> 2023
                 </time>
               </div>
               <div class="postcard__bar"></div>
@@ -58,15 +65,15 @@
         
             </div>
           </article>
-          <article class="postcard light green">
+          <article class="postcard light green" data-aos="fade-up"  data-aos-duration="1500">
             <a class="postcard__img_link" href="#">
               <img class="postcard__img" src="/assets/img/setup.png" alt="Image Title" />
             </a>
             <div class="postcard__text t-dark">
               <h1 class="postcard__title green"><a href="#">Perfect Setup</a></h1>
               <div class="postcard__subtitle small">
-                <time datetime="2023-08-10 18:00:00">
-                  <i class="fas fa-calendar-alt mr-2"></i>Tue, 30th 2023
+                <time datetime="2023-07-31 18:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>July 31 <sup>th</sup> 2023
                 </time>
               </div>
               <div class="postcard__bar"></div>
@@ -85,7 +92,9 @@
 
     <%- include("../template/script.ejs") %>
 
-<style></style>
+    <script>
+      AOS.init();
+  </script>
 </body>
 
 </html>

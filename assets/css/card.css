@@ -17,8 +17,8 @@ body {
 }
 
 a, a:hover {
-  text-decoration: none !important;
-  transition: color 0.3s ease-in-out !important;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 #pageHeaderTitle {
@@ -242,7 +242,7 @@ a, a:hover {
 }
 
 .red .postcard__title:hover {
-  color: #bd150b !important;
+  color: #bd150b;
 }
 
 .red .postcard__bar {

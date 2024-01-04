@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Ruh Adam</title>
   <%- include("../template/head") %>
+
 </head>
 
 <body style="padding-left: 0rem;">
@@ -32,81 +33,13 @@
 
 
     </div>
-    <div class="container-fluid">
-    <div class="article-clean mb-5">
+    <% const lastValue = value;%> 
+    <%- include(`../template/${lastValue}`) %>
 
-      <div class="row"data-aos="fade-up"  data-aos-duration="2000" >
-        <div class="col-md-6 text-center custom-padding order-2 order-md-1 ">
-          <h3 id="app"></h3>
-          <p class="card-text text-center p-4" style="font-size: 1.25rem;">🌍 I'm a 21 years old web developer based in
-            the beautiful lands of Turkey. My passion for the world of computers started at a young age, and since then,
-            I've been dedicated to constantly improving myself...</p>
-          <p>for More</p>
-          <div class="home-buttons">
-            <button style="--content: 'Github';" href="https://twitter.com/kamildyrek">
-              <div class="left"></div>
-              Github
-              <div class="right"></div>
-            </button>
-
-
-            <button style="--content: 'About me';" href="https://twitter.com/kamildyrek">
-              <div class="left"></div>
-              About Me
-              <div class="right"></div>
-            </button>
-
-
-          </div>
-        </div>
-        <!-- MASAÜSTÜ GÖRÜNÜM -->
-        <div class="col-md-6 mb-5 order-1 order-md-2  d-none d-md-block">
-          <img src="/assets/img/mypc.jpeg" style="width: 170%;" class="img-fluid" alt="Resim">
-        </div>
-        <!-- MOBİL GÖRÜNÜM -->
-        <div class="col-12 mb-5 order-1 order-md-2 d-md-none">
-          <img src="/assets/img/mypc.jpeg" class="img-fluid" alt="Mobil Resim">
-        </div>
-        <!-- MOBİL GÖRÜNÜM -->
-      </div>
-
-
-    </div>
-  </div>
-    <!-- CONTAINER START -->
-
-    <!-- CONTAINER END -->
 
     <%- include("../template/script.ejs") %>
 
-      <style>
-        .gif-container {
-          float: right;
-          position: relative;
-          bottom: 89px;
-        }
-
-        .img-fluid {
-          max-width: 100%;
-          height: auto;
-          box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
-          -webkit-box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
-          -moz-box-shadow: 26px 19px 51px -5px rgba(0, 0, 0, 0.53);
-          border-radius: 18px 18px 18px 18px;
-          -webkit-border-radius: 18px 18px 18px 18px;
-          -moz-border-radius: 18px 18px 18px 18px;
-        }
-
-        @media (max-width: 768px) {
-          .img-fluid {
-            position: relative;
-            bottom: 5%;
-          
-          }
-
-
-        }
-      </style>
+     
 </body>
 <script>
   AOS.init();
