@@ -19,7 +19,7 @@ router.use('/about', (req, res) => {
 
 router.use('/', (req, res) => {
     const data = {
-        value: "",
+        value: "home",
         title: "Ana Sayfa"
       };
     res.render("pages/index",data);
